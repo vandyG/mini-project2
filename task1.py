@@ -22,6 +22,9 @@
 def gift_recommender(preference, budget):
     """Recommends a gift based on user's preference and budget.
 
+    Assumption:
+        budget is non-negative (>= 0)
+
     Args:
         preference: The user's preference for the gift.
         budget: The user's budget for the gift.
