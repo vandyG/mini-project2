@@ -19,18 +19,18 @@
 # | not listed above  | any price                               | "decorative gifts!"  |
 
 
-def gift_recommender(preference, budget):
+def gift_recommender(preference: str, budget: float) -> str:
     """Recommends a gift based on user's preference and budget.
 
     Assumption:
         budget is non-negative (>= 0)
 
     Args:
-        preference: The user's preference for the gift.
-        budget: The user's budget for the gift.
+        preference (str): The user's preference for the gift.
+        budget (float): The user's budget for the gift.
 
     Returns:
-        A string recommending a gift based on the user's preference and budget.
+        str: A string recommending a gift based on the user's preference and budget.
     """
     if preference == "electronics":
         if budget <= 100:
